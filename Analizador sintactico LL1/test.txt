@@ -1,0 +1,16 @@
+p: true;
+q: false;
+
+<< p -> q;
+
+r: (p -> q) ? p and q : r or not q;
+s: r and not(r and p);
+
+<< r;
+<< s;
+<< r = s;
+<< r != s;
+
+s': not s;
+
+<< r = s'
